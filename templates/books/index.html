@@ -8,7 +8,10 @@
         <div class="content">
             <a href="/books/{{book_id}}">{{book.title}}</a>
             <span>{{book.author.name}}. Genre: {{book.genre}}</span>
-            <form action=></form>
+            <span><form action="/books/{{book.id}}/delete" method="POST">
+                <button>Delete</button></span>
+        
+            </form>
         </div>
     </div>
 </div>
