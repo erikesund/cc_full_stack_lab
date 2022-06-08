@@ -6,7 +6,7 @@
 <div class="books_list">
     <div class="book">
         <div class="content">
-            <a href="/books/{{book_id}}">{{book.title}}</a>
+            <a href="/books/{{book.id}}">{{book.title}}</a>
             <span>{{book.author.name}}. Genre: {{book.genre}}</span>
             <span><form action="/books/{{book.id}}/delete" method="POST">
                 <button>Delete</button></span>

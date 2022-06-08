@@ -29,7 +29,7 @@ def select(id):
     result = run_sql(sql, values)[0]
     if result is not None:
         author = author_repository.select(result["author_id"])
-        book = Book(result["title"], result["genre"], author, row["id"])
+        book = Book(result["title"], result["genre"], author, result["id"])
     return book
 
 def delete_all():
