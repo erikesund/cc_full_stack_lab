@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <header>BOOKS</header>
+    <header>
+       <h1>A Fine Old Library of Books</h1>
+       <nav>
+           <ul>
+               <li>
+                   <a href="/">Home</a>
+               </li>
+           </ul>
+           <ul>
+               <li>
+                   <a href="/books">View the Collection</a>
+               </li>
+           </ul>
+       </nav>
+    </header>
     {% block content %}
         
     {% endblock content %}

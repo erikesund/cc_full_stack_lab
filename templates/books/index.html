@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for book in books %}
+
+<div class="books_list">
+    <div class="book">
+        <div class="content">
+            <a href="/books/{{book_id}}">{{book.title}}</a>
+            <span>{{book.author.name}}. Genre: {{book.genre}}</span>
+            <form action=></form>
+        </div>
+    </div>
+</div>
+
+    {% endfor %}
+{% endblock content %}

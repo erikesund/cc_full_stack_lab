@@ -5,8 +5,8 @@ from models.author import Author
 import repositories.author_repository as author_repository
 import repositories.book_repository as book_repository
 
-# delete all
-# delete all
+book_repository.delete_all()
+author_repository.delete_all()
 
 author_1 = Author("J. R. R. Tolkein")
 author_2 = Author("F. Scott Fitzgerald")
