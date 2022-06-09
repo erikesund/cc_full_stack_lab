@@ -4,5 +4,24 @@ body {
 
 body > header {
     background-color: chocolate;
-    color: blanchedalmond
+    color: blanchedalmond;
+    padding-left: 1rem;
+    justify-content: center;
+}
+
+body > header > h1 {
+    padding: 5px;
+}
+
+body > header > nav {
+    display: flex;
+}
+
+body > header > nav > ul {
+    list-style: none;
+}
+
+body > header > nav > ul > li > a {
+    color: blanchedalmond;
+    text-decoration: none;
 }
