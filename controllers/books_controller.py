@@ -18,3 +18,4 @@ def delete_book(id):
 def show_book(id):
     found_book = book_repository.select(id)
     return render_template("books/show.html", book = found_book)
+

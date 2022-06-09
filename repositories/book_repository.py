@@ -24,7 +24,7 @@ def select_all():
 
 def select(id):
     book = None
-    sql = "SELECT * FROM books WHERE id =%s"
+    sql = "SELECT * FROM books WHERE id = %s"
     values = [id]
     result = run_sql(sql, values)[0]
     if result is not None:
